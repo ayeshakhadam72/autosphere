@@ -65,7 +65,15 @@ console.log(filterarray, 'filterarray')
                        <div className=' text-center'>
                            <h2 className='text-[36px] font-[700] '>Explore Most Popular Cars</h2>
                            <Image src={Titlehead} className=' mx-auto py-3 ' />
-                           <p className='text-[18px] text-[#676767] '>Here's a list of some of the most popular cars <br/> globally, based on sales and customer preferences.</p>
+                           <p className='text-[18px] text-[#676767] '>At AutoSphere, we bring you the most sought-after cars from top brands like Audi, Toyota, Hyundai, and Tesla. Whether you're looking for luxury, reliability, or cutting-edge innovation, our popular models offer something for everyone. Explore our collection to find your perfect ride today!
+
+
+
+
+
+
+
+</p>
                        </div>
                        {/* top1 collection */}
 

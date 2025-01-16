@@ -25,9 +25,9 @@ const Bannermiddle = () => {
 <div className='2xl:w-[80%] '>
    
 
-        <h2 className='text-[36px]  lg:text-[62px] font-[700] text-white leading-normal '>Dreamsrental User </h2>
-        <h1 className='text-[30px] sm:text-[36px]  lg:text-[62px] font-[700] text-white '>Friendly App Available</h1>
-        <p className='text-white  text-[18px] pb-10'>Appropriately monetize one-to-one interfaces rather than cutting-edge Competently disinte rmediate backward.
+        <h2 className='text-[36px]  lg:text-[62px] font-[700] text-white leading-normal '>AutpSphere User </h2>
+        <h1 className='text-[30px] sm:text-[36px]  lg:text-[62px] font-[700] text-white '>Friendly App </h1>
+        <p className='text-white  text-[18px] pb-10'>Discover a seamless experience with the DreamsRental app, designed to make your renting journey effortless. Our app ensures smooth and personalized one-on-one interactions, helping you monetize opportunities effectively. With a focus on simplicity and efficiency, we eliminate unnecessary complexities to provide a hassle-free renting process.
 </p>
 <div className='mt-5 flex gap-2'>
     <div>
