@@ -1,21 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sansita+Swashed:wght@300..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.bg-banner{
+    background-image: url('/bannerH.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+.bg-commentsbanner{
+  background-image: url('/commentsbanner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+#mysidebar{
+    position: fixed;
+    background-color: black;
+    height: 100vh;
+    width: 240px;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    /* margin: 0px 0px; */
+    /* text-align: left; */
+    z-index: 999;
+}
+/* slider */
+
+
+#box-Shadow{
+  box-shadow: 0px 4px 24px rgba(225, 225, 225, 0.25);
+}
+#bgbox:hover{
+  background-color: black;
+}
+#bg-box:hover #bgimgbox{
+  background-color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.custom::after{
+    content: "";
+    background: #FCB215;
+    width: 27px;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    /* bottom: -40%; */
+
+}
+*{
+  padding: 0px;
+  margin: 0px;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* #bg-about{
+  
+  background-image: url('/bgabout.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+} */
+.count-bg{
+  background-image: url('/countbg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 307px;
+  height: 131px;
+  border-radius: 10px;
 }

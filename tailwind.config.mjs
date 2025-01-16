@@ -7,6 +7,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        FiraSans: ["Fira Sans" ,  "serif"],
+
+
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
