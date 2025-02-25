@@ -1,23 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React from 'react'
 
 // import Swiper core and required modules
@@ -39,6 +21,10 @@ import Sedan from "../../../public/Sedan.png"
 import SportsCoupe from "../../../public/SportsCoupe.png"
 import Pickup from "../../../public/Pickup.png"
 import { FaArrowRightLong } from "react-icons/fa6";
+import Buttons from '../buttons';
+import GeneralHeading from '../typography/general-heading';
+import SubHeading from '../typography/sub-heading';
+import Paragraph from '../paragraph';
 const PopularMyCartypes = () => {
     return (
         <>
@@ -47,9 +33,11 @@ const PopularMyCartypes = () => {
                     <div className=' w-[95%] xl:w-[60%]'>
 
                         <div className='mb-10 text-center'>
-                            <h2 className='text-[36px] font-[700] '>Most Popular Cartypes</h2>
+                            <GeneralHeading  Content={'Most Popular Cartypes'} />
                             <Image src={Titlehead} className=' mx-auto py-3 ' />
-                            <p className='text-[18px] text-[#676767] '>Most popular worldwide Car Category due to their <br></br> reliability, affordability, and features.</p>
+                            <Paragraph Style={' text-[#676767]'} Content={'Most popular worldwide Car Category due to their  reliability, affordability, and features.'} />
+
+
                         </div>
 
                         <Swiper
@@ -57,9 +45,11 @@ const PopularMyCartypes = () => {
                             modules={[Navigation,]}
                             spaceBetween={15}
                             slidesPerView={4}
-                            navigation
-                            
-                            
+                            autoplay={true}
+                            //   ihdr auto play lagana ha 
+                            loop={true}
+
+
                             onSwiper={(swiper) => console.log(swiper)}
                             onSlideChange={() => console.log('slide change')}
                         >
@@ -116,22 +106,23 @@ const PopularMyCartypes = () => {
 
                             </div>
 
-                        
+
                         </Swiper>
 
                     </div>
-                   
+
 
                 </div>
                 <div className='flex justify-center  mt-10'>
-                        <button className='flex items-center rounded-md gap-2 py-2 px-6 text-[16px] bg-white border-2 border-black hover:bg-[#fe9307] hover:border-[#fe9307] hover:text-white font-semibold '>View all Cars <span><FaArrowRightLong /></span>
-                        </button>
-                    </div>
+                    <Buttons Style={' bg-white border-2 border-black hover:bg-[#fe9307] hover:border-[#fe9307] hover:text-white font-semibold '} Content={'View all Cars'}
+                        LastIcon={<FaArrowRightLong />} />
+                  
+                </div>
             </div>
-       
-   
-    </>
-  )
+
+
+        </>
+    )
 }
 
 export default PopularMyCartypes

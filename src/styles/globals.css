@@ -79,3 +79,24 @@
   height: 131px;
   border-radius: 10px;
 }
+/*  */
+.swiper-pagination-bullet {
+  background-color: #ddd; /* Default dot color */
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000; /* Active dot color */
+}
+
+/*  */
+
+#login-bg{
+  background-image: url('/loginbg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}

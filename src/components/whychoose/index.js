@@ -5,6 +5,10 @@ import Image from 'next/image'
 import FastBooking from "../../../public/FastBooking.png"
 import PickupLocation from "../../../public/PickupLocation.png"
 import Satisfaction from "../../../public/Satisfaction.png"
+import GeneralHeading from '../typography/general-heading'
+import SubHeading from '../typography/sub-heading'
+import Paragraph from '../paragraph'
+import WhyChooseReuse from '../whychosereuse'
 
 const Whychoose = () => {
     return (
@@ -13,48 +17,46 @@ const Whychoose = () => {
                 <div className='flex justify-center '>
                     <div className=' w-[95%] 2xl:w-[75%] '>
                         <div className=' text-center'>
-                            <h2 className='text-[36px] font-[700] '>Why Choose Us</h2>
+                        <GeneralHeading  Content={'Why Choose Us'} />
+
                             <Image src={Titleehead} className=' mx-auto py-3 ' />
-                            <p className='text-[18px] text-[#676767] '>At AutoSphere, we strive to make your car-buying experience seamless and rewarding. From offering top-quality vehicles to delivering exceptional customer service, we are dedicated to exceeding your expectations at every step.</p>
+                            <Paragraph Style={'text-[#676767]'} Content={'At AutoSphere, we strive to make your car-buying experience seamless and rewarding. From offering top-quality vehicles to delivering exceptional customer service, we are dedicated to exceeding your expectations at every step.'} />
+                            
                         </div>
 
                         {/*  */}
                         <div className='lg:flex  gap-10 my-10 '>
-                            <div className='bg-white hover:bg-black hover:text-white  lg:w-1/3 rounded-lg ' id='box-Shadow ' >
-                                <div className='  px-[40px] py-[40px] text-black hover:text-white '>
+                            <WhyChooseReuse IconStyle={'bg-black '} imgIcon={FastBooking}
+                            heading={'Wide Range of Premium Cars'}
 
-                                    <div className='bg-black hover:bg-white  px-[20px] py-[15px] rounded-lg mb-[20px]  ' >
-                                        <Image src={FastBooking} className='mx-auto  ' />
-                                    </div>
-                                    <p className='text-center text-[22px] lg:text-[24px] font-[600]  mb-[20px]   '> Wide Range of Premium Cars</p>
-                                    <p className='text-center'>We offer an extensive selection of vehicles from top brands like Audi, Toyota, Hyundai, and Tesla. Whether you seek luxury, reliability, or cutting-edge technology, we have the perfect car for you.</p>
+                          description={'  We offer an extensive selection of vehicles from top brands like Audi, Toyota, Hyundai, and Tesla. Whether you seek luxury, reliability, or cutting-edge technology, we have the perfect car for you.'} />
+{/* 2 */}
+                           <WhyChooseReuse Style={' my-10 lg:my-0'} IconStyle={'bg-[#127384] '} imgIcon={PickupLocation}
+                            heading={'Trusted Quality and Transparency'}
 
-                                </div>
-                            </div>
+                          description={'  We offer an extensive selection of vehicles from top brands like Audi, Toyota, Hyundai, and Tesla. Whether you seek luxury, reliability, or cutting-edge technology, we have the perfect car for you.'} />
+{/* 3 */}
+<WhyChooseReuse  IconStyle={'bg-[#ffa633]  '} imgIcon={PickupLocation}
+                            heading={'Exceptional Customer Support'}
+
+                          description={'Our experienced team is always ready to guide you in choosing the right car. From personalized recommendations to post-purchase assistance, we’re here to make your journey smooth and stress-free.'} />
+                          
                             {/*  */}
-                            <div className=' my-10 lg:my-0 bg-white hover:bg-black hover:text-white lg:w-1/3  rounded-lg ' id='box-Shadow ' >
-                                <div className='  px-[40px] py-[40px] text-black hover:text-white '>
-
-                                    <div className='bg-[#127384] hover:bg-white  px-[20px] py-[15px] rounded-lg mb-[20px]  ' >
-                                        <Image src={PickupLocation} className='mx-auto  ' />
-                                    </div>
-                                    <p className='text-center text-[22px] lg:text-[24px] font-[600]  mb-[20px]   '>Trusted Quality and Transparency</p>
-                                    <p className='text-center'>Each car in our inventory is thoroughly inspected to ensure the highest quality standards. With clear and competitive pricing, you can trust us to provide honest and reliable service.</p>
-
-                                </div>
-                            </div>
+                           
+                           
                             {/*  */}
-                            <div className='bg-white hover:bg-black hover:text-white  lg:w-1/3 rounded-lg ' id='box-Shadow ' >
+                            {/* <div className='bg-white hover:bg-black hover:text-white  lg:w-1/3 rounded-lg ' id='box-Shadow ' >
                                 <div className='  px-[40px] py-[40px] text-black hover:text-white '>
 
-                                    <div className='bg-[#ffa633] hover:bg-white  px-[20px] py-[15px] rounded-lg mb-[20px]  ' >
+                                    <div className=' px-[20px] py-[15px] rounded-lg mb-[20px]  ' >
                                         <Image src={Satisfaction} className='mx-auto  ' />
                                     </div>
-                                    <p className='text-center text-[22px] lg:text-[24px] font-[600]  mb-[20px]   '>Exceptional Customer Support</p>
-                                    <p className='text-center'>Our experienced team is always ready to guide you in choosing the right car. From personalized recommendations to post-purchase assistance, we’re here to make your journey smooth and stress-free.
-                                    </p>
+                                    <SubHeading StyleSub={'text-center text-[22px] lg:text-[24px] mb-[20px] pt-0'}  Content={''} />
+                                   
+                                    <Paragraph Style={'text-center'} Content={''} />
+                                   
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
 
                     </div>

@@ -42,7 +42,7 @@ const Productdata = [
 {
 category: "Toyota",
 productonimg:"Toyota",
-productname: "Toyota Camry SE 350",
+productname: " my Toyota Camry SE 350",
 productviews: "(4.0) 138 Reviews",
 productlocationpin: "3.2m",
 producttype:"Auto",
@@ -62,7 +62,7 @@ productimg0:Girl1
 {
     category: "Toyota",
     productonimg:"Toyota",
-    productname: "Toyota Camry SE 350",
+    productname: "aaa Toyota Camry SE 350",
     productviews: "(4.0) 138 Reviews",
     productlocationpin: "3.2m",
     producttype:"Auto",

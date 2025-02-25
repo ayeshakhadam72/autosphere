@@ -1,0 +1,30 @@
+[
+  {
+    "username": " ayesha",
+    "password": "$2a$10$2prqrSzjW0pL9CPpkxmgt.sxFAWeoQ7RteG39Njqs.nw4kneh9i.a",
+    "email": "ayeshakhadam2@gmail.com",
+    "name": " aliha",
+    "age": 22
+  },
+  {
+    "username": "urooj",
+    "password": "$2a$10$e8t2vHx3fxN0bmbAEVY0LesQod6mBF3RnT1aPsos.YoH6xwo7pjCa",
+    "email": "urooj@gmail.com",
+    "name": "urooj",
+    "age": 16
+  },
+  {
+    "username": "ayesha",
+    "password": "$2a$10$o6Oj8rHa0pBd1A/hP/TRM.5d35zXWw2FZ0KCXjPGawbVpLucXCeGu",
+    "email": "ayeshakhadam2g@gmail.com",
+    "name": "aaaaaaa",
+    "age": 22
+  },
+  {
+    "username": "usman",
+    "password": "$2a$10$EYtdsr3iPLmrfWWuOthiw.NcUcCLr.gB9EonrV3bAaHCyuXnC1uc.",
+    "email": "usman@gmail.com",
+    "name": "saba",
+    "age": 19
+  }
+]

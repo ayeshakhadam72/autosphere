@@ -4,6 +4,8 @@ import React from 'react'
 
 import Girl1 from "../../../public/girl1.jpg"
 import { FaCalendarAlt } from "react-icons/fa";
+import SubHeading from '../typography/sub-heading';
+import Paragraph from '../paragraph';
 const Reusecard = (   { Journey , mypaara , explaination  , myimg , date, myInsight1} ) => {
   return (
     <>
@@ -12,9 +14,11 @@ const Reusecard = (   { Journey , mypaara , explaination  , myimg , date, myInsi
 <Image src={myInsight1} className='h-[285px] object-cover rounded-t-lg' />
         </div>
         <div className=' px-[20px] py-[20px] '>
-      <button className='py-[5px] px-[14px] text-sm rounded-md mb-[20px] text-white bg-[#127384] hover:bg-black '> {Journey} </button>
-      <h1 className='text-[24px] font-[700] hover:text-[#127384] mb-[20px]' >{mypaara}</h1>
-      <p className=' text-[#676767] text-[16px] mb-[20px]'>{ explaination}</p>
+      <div className='py-[5px] px-[14px] text-sm rounded-md mb-[20px] text-white bg-[#127384] hover:bg-black '> {Journey} </div>
+      <SubHeading StyleSub={' hover:text-[#127384] mb-[20px] '}   Content={mypaara} />     
+      
+      <Paragraph Style={'text-[#676767] mb-[20px]'} Content={ explaination} />
+      
 
 <div className='bg-[#F2F7F6] rounded-lg  px-[13px] py-[13px] text-[#676767] '>
   <div className='flex justify-between'>

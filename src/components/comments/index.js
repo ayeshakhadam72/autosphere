@@ -19,6 +19,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import GeneralHeading from '../typography/general-heading'
+import SubHeading from '../typography/sub-heading'
+import Paragraph from '../paragraph'
 
 const Comments = () => {
     return (
@@ -27,9 +30,12 @@ const Comments = () => {
                 <div className='flex justify-center '>
                     <div className=' w-[90%] xl:w-[75%]'>
                         <div className=' text-center'>
-                            <h2 className='text-[36px] font-[700] text-white '>What People say about us?</h2>
+                        <GeneralHeading contentStyle={'text-white'} Content={'What People say about us?'} />
+
                             <Image src={Titlehead} className=' mx-auto py-3 ' />
-                            <p className='text-[18px] text-white '>At AutoSphere, customer satisfaction is our top priority. We take pride in delivering exceptional service and high-quality vehicles to meet your unique needs. Here's what our happy customers have to say:</p>
+                            <Paragraph Style={'text-white'} Content={'At AutoSphere, customer satisfaction is our top priority. We take pride in delivering exceptional service and high-quality vehicles to meet your unique needs. Here what our happy customers have to say'} />
+                            
+                           
                         </div>
                         <Swiper
                             // install Swiper modules
@@ -64,10 +70,10 @@ const Comments = () => {
                                                 <Image src={Quote} className='w-[28px] h-[28px]' />
                                             </div>
                                         </div>
-                                        <p className='mb-[24px]'>
-                                            AutoSphere has been my trusted partner for business travel. Their cars are always clean,
-                                            reliable, and perfect for any occasion. Booking with them is always hassle-free!
-                                        </p>
+
+                                        <Paragraph Style={'mb-[24px]'} Content={'AutoSphere has been my trusted partner for business travel Their cars are always clean reliable and perfect for any occasion Booking with them is always hassle free'} />
+
+                                      
                                         <p className='flex gap-2 items-center'>
                                             <span className='flex text-[#ff9307] font-[900] text-[16px]'>
                                                 <RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill className='text-gray-300' />
@@ -94,10 +100,8 @@ const Comments = () => {
                                                 <Image src={Quote} className='w-[28px] h-[28px]' />
                                             </div>
                                         </div>
-                                        <p className='mb-[24px]'>
-                                            I’ve tried many rental services, but AutoSphere stands out for their excellent customer support
-                                            and wide range of cars. I always feel valued as a customer with them.
-                                        </p>
+                                        <Paragraph Style={'mb-[24px]'} Content={'I’ve tried many rental services, but AutoSphere stands out for their excellent customer support and wide range of cars. I always feel valued as a customer with them.'} />
+                                        
                                         <p className='flex gap-2 items-center'>
                                             <span className='flex text-[#ff9307] font-[900] text-[16px]'>
                                                 <RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill className='text-gray-300' />
@@ -131,9 +135,9 @@ const Comments = () => {
                                                 <Image src={Quote} className='w-[28px] h-[28px]' />
                                             </div>
                                         </div>
-                                        <p className='mb-[24px]'>
-                                            AutoSphere has truly exceeded my expectations. Their seamless process and reliable vehicles make every trip stress-free and enjoyable. I highly recommend them for both short and long journeys!
-                                        </p>
+
+                                        <Paragraph Style={'mb-[24px]'} Content={'AutoSphere has truly exceeded my expectations. Their seamless process and reliable vehicles make every trip stress-free and enjoyable. I highly recommend them for both short and long journeys!'} />
+                                      
                                         <p className='flex gap-2 items-center'>
                                             <span className='flex text-[#ff9307] font-[900] text-[16px]'>
                                                 <RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill className='text-gray-300' />
@@ -160,9 +164,9 @@ const Comments = () => {
                                                 <Image src={Quote} className='w-[28px] h-[28px]' />
                                             </div>
                                         </div>
-                                        <p className='mb-[24px]'>
-                                            I’ve been using AutoSphere for years, and they never disappoint. Their attention to detail and customer care make me feel valued every single time. Truly the best in the business!
-                                        </p>
+
+                                        <Paragraph Style={'mb-[24px]'} Content={'I’ve been using AutoSphere for years, and they never disappoint. Their attention to detail and customer care make me feel valued every single time. Truly the best in the business!'} />
+                                        
                                         <p className='flex gap-2 items-center'>
                                             <span className='flex text-[#ff9307] font-[900] text-[16px]'>
                                                 <RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill className='text-gray-300' />
@@ -197,9 +201,8 @@ const Comments = () => {
                                                 <Image src={Quote} className='w-[28px] h-[28px]' />
                                             </div>
                                         </div>
-                                        <p className='mb-[24px]'>
-                                            From easy booking to smooth pickups, AutoSphere has always provided a stellar experience. Their vehicles are top-notch and always ready to hit the road without a hitch!
-                                        </p>
+                                        <Paragraph Style={'mb-[24px]'} Content={'From easy booking to smooth pickups, AutoSphere has always provided a stellar experience. Their vehicles are top-notch and always ready to hit the road without a hitch!'} />
+                                      
                                         <p className='flex gap-2 items-center'>
                                             <span className='flex text-[#ff9307] font-[900] text-[16px]'>
                                                 <RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill className='text-gray-300' />
@@ -226,9 +229,9 @@ const Comments = () => {
                                                 <Image src={Quote} className='w-[28px] h-[28px]' />
                                             </div>
                                         </div>
-                                        <p className='mb-[24px]'>
-                                            Whether for a road trip or a business meeting, AutoSphere has always had the perfect vehicle for me. Their exceptional service makes every journey a delight!
-                                        </p>
+                                        <Paragraph Style={'mb-[24px]'} Content={'Whether for a road trip or a business meeting, AutoSphere has always had the perfect vehicle for me. Their exceptional service makes every journey a delight!'} />
+                                       
+                                      
                                         <p className='flex gap-2 items-center'>
                                             <span className='flex text-[#ff9307] font-[900] text-[16px]'>
                                                 <RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill /><RiStarSFill className='text-gray-300' />

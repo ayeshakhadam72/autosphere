@@ -3,6 +3,8 @@ import React from 'react'
 import { IoIosCheckmark } from "react-icons/io";
 
 import Bgabout from "../../../public/bgabout.png"
+import GeneralHeading from '../typography/general-heading';
+import Paragraph from '../paragraph';
 const Ourcompanyabout = () => {
   return (
     <>
@@ -28,15 +30,14 @@ const Ourcompanyabout = () => {
                 {/* 2 */}
                 <div className='xl:w-[50%] flex items-center p-2 '>
                   <div>
+
                     <h2 className=' text-[18px] text-[#127384] font-[500] mb-[12px] '>ABOUT OUR COMPANY</h2>
-                    <h2 className='text-[30px] sm:text-[38px] font-[500] mb-[30px] '>Best Solution For Car Services</h2>
-                    <p className=' mb-[14px] text-[#676767] '>At AutoSphere, we believe in innovation, creativity, and delivering exceptional results. We are a team of passionate professionals dedicated to helping businesses grow and thrive in the ever-evolving digital world. With years of experience and expertise in digital marketing, IT services, website development, and more, we provide tailored solutions that align with your unique goals and challenges.
+                    <GeneralHeading contentStyle={'text-[30px] sm:text-[38px] font-[500] mb-[30px]'} Content={'Best Solution For Car Services'} />
+                   
+                   <Paragraph Style={' mb-[14px] text-[#676767'} Content={'At AutoSphere, we believe in innovation, creativity, and delivering exceptional results. We are a team of passionate professionals dedicated to helping businesses grow and thrive in the ever-evolving digital world. With years of experience and expertise in digital marketing, IT services, website development, and more, we provide tailored solutions that align with your unique goals and challenges.'} />
 
-
-
-                    </p>
-
-                    <p className=' mb-[14px] text-[#676767] '> Whether you're a startup or an established brand, our approach is always customer-centric. We prioritize building strong, long-lasting relationships and deliver solutions that ensure success in the digital age.</p>
+<Paragraph Style={'mb-[14px] text-[#676767]'} Content={'Whether youre a startup or an established brand, our approach is always customer-centric. We prioritize building strong, long-lasting relationships and deliver solutions that ensure success in the digital age.'} />
+                   
 
                     <div className='sm:flex gap-36'>
                       <div>

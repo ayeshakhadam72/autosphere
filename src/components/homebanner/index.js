@@ -7,31 +7,49 @@ import { CiLocationOn } from "react-icons/ci";
 import { MdOutlineDateRange } from "react-icons/md";
 import { MdOutlineAccessTime } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
+import Buttons from '../buttons';
+import Heading from '../typography/heading';
+import SubHeading from '../typography/sub-heading';
+import FirstContentData from '../firstcontentreuse';
+import HomeData from '../firstcontentreuse';
+import Paragraph from '../paragraph';
 const HomeBanner = () => {
     return (
         <>
             <div className='bg-banner bg-[#f2f7f6] py-[70px]  font-FiraSans flex items-center '>
                 <div className='px-4 lg:px-0'>
                     <div className='flex gap-10  '>
-                        <div className='sm:pl-4 2xl:pl-0 lg:w-[55%] flex 2xl:justify-end '>
-                            <div className='2xl:w-[60%] '>
-                                <button className='text-sm flex gap-2 bg-white py-2 sm:py-4 px-6 rounded-full '>
-                                    <span className='text-[#ffae46] text-sm md:text-[20px] '> <FaThumbsUp /> </span>
-                                    100% Trusted car rental platform in the World
-                                </button>
+                        {
+                           HomeData.map((value) => {
+                                return(
+                                <div className='sm:pl-4 2xl:pl-0 lg:w-[55%] flex 2xl:justify-end '>
+                                <div className='2xl:w-[60%] '>
+                                                <button className='text-sm flex gap-2 bg-white py-2 sm:py-4 px-6 rounded-full '>
+                                                    <span className='text-[#ffae46] text-sm md:text-[20px] '> <FaThumbsUp /> </span>
+                                                   {value.banner.SubHeading}
+                                                </button>
+                
+               
+                                                <Heading ContentStyle={'text-[36px] text-[#ffae46]'} content={value.banner.heading.first} />
+                                                
+                                                <Heading ContentStyle={'text-[30px] text-black'} content={value.banner.heading.second} />
 
-                                <h2 className='text-[36px]  lg:text-[62px] font-[700] text-[#ffae46] leading-normal '>Welcome AutoSphere</h2>
-                                <h1 className='text-[30px] sm:text-[36px]  lg:text-[62px] font-[700] text-black  '>Drive Your Dream Car</h1>
-                                <p className='text-[#676767]  text-[16px] pb-6'>At AutoSphere, we bring you an exceptional collection of the world’s most sought-after cars, including Audi, Hyundai, Toyota, and Tesla. Whether you’re looking for luxury, reliability, or innovation, we have the perfect car for you.
-                                </p>
-                                <button className='flex items-center rounded-md gap-2 py-2 px-6 text-[16px] bg-white border-2 border-black hover:bg-[#fe9307] hover:border-[#fe9307] hover:text-white font-semibold '>View all Cars <span><FaArrowRightLong /></span>
-                                </button>
-                            </div>
-                        </div>
-
-                        <div className='hidden lg:block  lg:w-[45%] '>
-                            <Image src={Bannercar} className=' w-[626px] h-[406px] ' />
-                        </div>
+                                                <Paragraph Style={'text-[#676767] pb-6 '} Content={value.banner.Description} />
+                                               
+                
+                                                <Buttons Style={' bg-white border-2 border-black hover:bg-[#fe9307] hover:border-[#fe9307] hover:text-white font-semibold '}
+                                                 Content={value.banner.Button}
+                                                IconStyle={'text-[16px] font-[500]'} LastIcon={<FaArrowRightLong />}   />
+                                        
+                                            </div>
+                                </div>
+                                
+                                )
+                            })
+                        }
+                      <div className='hidden lg:block  lg:w-[45%] '>
+                                     <Image src= {Bannercar} className=' w-[626px] h-[406px] ' />
+                                 </div>
                     </div>
                 </div>
             </div>
@@ -87,7 +105,9 @@ const HomeBanner = () => {
                                     </div>
                                     {/* btn */}
                                     <div>
-                                        <button className=' flex gap-2 items-center rounded-xl text-white hover:text-black hover:border-2 border-black bg-[#fe9307] hover:bg-white 2xl:px-10 px-[88px] py-4'> <FaSearch /> Search </button>
+                                    <Buttons FirstIcon={  <FaSearch /> }  Style={'hover:text-black rounded-xl text-white hover:border-2 border-black bg-[#fe9307] hover:bg-white 2xl:px-10 px-[88px] py-4 '} Content={'Search'}
+                                 />
+                                 {/* */}
                                     </div>
                                 </div>
 

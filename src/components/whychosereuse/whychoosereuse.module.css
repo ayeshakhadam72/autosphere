@@ -1,0 +1,12 @@
+
+
+
+.hoverEffect:hover  h1 , .hoverEffect:hover p  {
+ color: white;
+}
+.hoverEffect:hover .imgBg {
+    background-color: white;
+}
+.hoverEffect:hover img {
+    filter: invert(1);
+}

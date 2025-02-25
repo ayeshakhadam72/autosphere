@@ -12,6 +12,9 @@ import Orangeclr from "../../../public/orangeclr.png"
 import Blackclr from "../../../public/blackclr.png"
 import Lineorange from "../../../public/lineorange.png"
 import Dots from "../../../public/dots.png"
+import SubHeading from '../typography/sub-heading';
+import Heading from '../typography/heading';
+import Paragraph from '../paragraph';
 
 const Bannermiddle = () => {
   return (
@@ -24,11 +27,13 @@ const Bannermiddle = () => {
 <div className='sm:pl-4 2xl:pl-0 lg:w-[55%] flex 2xl:justify-center '>
 <div className='2xl:w-[80%] '>
    
-
-        <h2 className='text-[36px]  lg:text-[62px] font-[700] text-white leading-normal '>AutpSphere User </h2>
-        <h1 className='text-[30px] sm:text-[36px]  lg:text-[62px] font-[700] text-white '>Friendly App </h1>
-        <p className='text-white  text-[18px] pb-10'>Discover a seamless experience with the DreamsRental app, designed to make your renting journey effortless. Our app ensures smooth and personalized one-on-one interactions, helping you monetize opportunities effectively. With a focus on simplicity and efficiency, we eliminate unnecessary complexities to provide a hassle-free renting process.
-</p>
+        <Heading ContentStyle={'text-[36px]   text-white '}
+         content={'AutoSphere User '} />
+        <Heading ContentStyle={'text-[30px] sm:text-[36px] text-white'}
+         content={'Friendly App '} />
+      
+<Paragraph Style={'pb-10 text-white'} Content={'Discover a seamless experience with the DreamsRental app, designed to make your renting journey effortless. Our app ensures smooth and personalized one-on-one interactions, helping you monetize opportunities effectively. With a focus on simplicity and efficiency, we eliminate unnecessary complexities to provide a hassle-free renting process.'} />
+       
 <div className='mt-5 flex gap-2'>
     <div>
     <Image src={Orangeclr} />
